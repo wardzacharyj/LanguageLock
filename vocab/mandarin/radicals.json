@@ -1,0 +1,1072 @@
+[
+    {
+        "intermediate_1": "yī",
+        "native_1": "one",
+        "primary_1": "一"
+    },
+    {
+        "intermediate_1": "shù",
+        "native_1": "line",
+        "primary_1": "丨"
+    },
+    {
+        "intermediate_1": "diǎn",
+        "native_1": "dot",
+        "primary_1": "丶"
+    },
+    {
+        "intermediate_1": "piě",
+        "native_1": "slash",
+        "primary_1": "丿 or 乀 or 乁"
+    },
+    {
+        "intermediate_1": "yǐ",
+        "native_1": "second",
+        "primary_1": "乙 or 乚 or 乛"
+    },
+    {
+        "intermediate_1": "gōu",
+        "native_1": "hook",
+        "primary_1": "亅"
+    },
+    {
+        "intermediate_1": "èr",
+        "native_1": "two",
+        "primary_1": "二"
+    },
+    {
+        "intermediate_1": "tóu",
+        "native_1": "lid",
+        "primary_1": "亠"
+    },
+    {
+        "intermediate_1": "rén",
+        "native_1": "person",
+        "primary_1": "人 or 亻"
+    },
+    {
+        "intermediate_1": "ér",
+        "native_1": "legs",
+        "primary_1": "儿"
+    },
+    {
+        "intermediate_1": "rù",
+        "native_1": "enter",
+        "primary_1": "入"
+    },
+    {
+        "intermediate_1": "bā",
+        "native_1": "eight",
+        "primary_1": "八 or 丷"
+    },
+    {
+        "intermediate_1": "jiǒng",
+        "native_1": "down box",
+        "primary_1": "冂"
+    },
+    {
+        "intermediate_1": "mì",
+        "native_1": "cover",
+        "primary_1": "冖"
+    },
+    {
+        "intermediate_1": "bīng",
+        "native_1": "ice",
+        "primary_1": "冫"
+    },
+    {
+        "intermediate_1": "jī or jǐ",
+        "native_1": "table",
+        "primary_1": "几"
+    },
+    {
+        "intermediate_1": "qǔ",
+        "native_1": "open box",
+        "primary_1": "凵"
+    },
+    {
+        "intermediate_1": "dāo",
+        "native_1": "knife",
+        "primary_1": "刀 or刂"
+    },
+    {
+        "intermediate_1": "lì",
+        "native_1": "power",
+        "primary_1": "力"
+    },
+    {
+        "intermediate_1": "bāo",
+        "native_1": "wrap",
+        "primary_1": "勹"
+    },
+    {
+        "intermediate_1": "bǐ",
+        "native_1": "ladle",
+        "primary_1": "匕"
+    },
+    {
+        "intermediate_1": "fāng",
+        "native_1": "right open box",
+        "primary_1": "匚"
+    },
+    {
+        "intermediate_1": "xǐ",
+        "native_1": "hiding enclosure",
+        "primary_1": "匸"
+    },
+    {
+        "intermediate_1": "shí",
+        "native_1": "ten",
+        "primary_1": "十"
+    },
+    {
+        "intermediate_1": "bǔ",
+        "native_1": "divination",
+        "primary_1": "卜"
+    },
+    {
+        "intermediate_1": "jié",
+        "native_1": "seal",
+        "primary_1": "卩"
+    },
+    {
+        "intermediate_1": "hàn",
+        "native_1": "cliff",
+        "primary_1": "厂"
+    },
+    {
+        "intermediate_1": "sī",
+        "native_1": "private",
+        "primary_1": "厶"
+    },
+    {
+        "intermediate_1": "yòu",
+        "native_1": "again",
+        "primary_1": "又"
+    },
+    {
+        "intermediate_1": "kǒu",
+        "native_1": "mouth",
+        "primary_1": "口"
+    },
+    {
+        "intermediate_1": "wéi",
+        "native_1": "enclosure",
+        "primary_1": "囗"
+    },
+    {
+        "intermediate_1": "tǔ",
+        "native_1": "earth",
+        "primary_1": "土"
+    },
+    {
+        "intermediate_1": "shì",
+        "native_1": "scholar",
+        "primary_1": "士"
+    },
+    {
+        "intermediate_1": "zhī",
+        "native_1": "go",
+        "primary_1": "夂"
+    },
+    {
+        "intermediate_1": "suī",
+        "native_1": "go slowly",
+        "primary_1": "夊"
+    },
+    {
+        "intermediate_1": "xī",
+        "native_1": "night",
+        "primary_1": "夕"
+    },
+    {
+        "intermediate_1": "dà",
+        "native_1": "big",
+        "primary_1": "大"
+    },
+    {
+        "intermediate_1": "nǚ",
+        "native_1": "woman",
+        "primary_1": "女"
+    },
+    {
+        "intermediate_1": "zǐ",
+        "native_1": "child",
+        "primary_1": "子"
+    },
+    {
+        "intermediate_1": "gài",
+        "native_1": "roof",
+        "primary_1": "宀"
+    },
+    {
+        "intermediate_1": "cùn",
+        "native_1": "inch",
+        "primary_1": "寸"
+    },
+    {
+        "intermediate_1": "xiǎo",
+        "native_1": "small",
+        "primary_1": "小"
+    },
+    {
+        "intermediate_1": "yóu",
+        "native_1": "lame",
+        "primary_1": "尢 or 尣"
+    },
+    {
+        "intermediate_1": "shī",
+        "native_1": "corpse",
+        "primary_1": "尸"
+    },
+    {
+        "intermediate_1": "chè",
+        "native_1": "sprout",
+        "primary_1": "屮"
+    },
+    {
+        "intermediate_1": "shān",
+        "native_1": "mountain",
+        "primary_1": "山"
+    },
+    {
+        "intermediate_1": "chuān",
+        "native_1": "river",
+        "primary_1": "川 or 巛 or 巜"
+    },
+    {
+        "intermediate_1": "gōng",
+        "native_1": "work",
+        "primary_1": "工"
+    },
+    {
+        "intermediate_1": "jǐ",
+        "native_1": "oneself",
+        "primary_1": "己"
+    },
+    {
+        "intermediate_1": "jīn",
+        "native_1": "towel",
+        "primary_1": "巾"
+    },
+    {
+        "intermediate_1": "gān",
+        "native_1": "dry",
+        "primary_1": "干"
+    },
+    {
+        "intermediate_1": "yāo",
+        "native_1": "thread",
+        "primary_1": "幺"
+    },
+    {
+        "intermediate_1": "guǎng",
+        "native_1": "shelter",
+        "primary_1": "广"
+    },
+    {
+        "intermediate_1": "yǐn",
+        "native_1": "stride",
+        "primary_1": "廴"
+    },
+    {
+        "intermediate_1": "gǒng",
+        "native_1": "hands joined",
+        "primary_1": "廾"
+    },
+    {
+        "intermediate_1": "yì",
+        "native_1": "shoot with a bow",
+        "primary_1": "弋"
+    },
+    {
+        "intermediate_1": "gōng",
+        "native_1": "bow",
+        "primary_1": "弓"
+    },
+    {
+        "intermediate_1": "jì",
+        "native_1": "snout",
+        "primary_1": "彐 or 彑"
+    },
+    {
+        "intermediate_1": "shān",
+        "native_1": "hair",
+        "primary_1": "彡"
+    },
+    {
+        "intermediate_1": "chì",
+        "native_1": "step",
+        "primary_1": "彳"
+    },
+    {
+        "intermediate_1": "xīn",
+        "native_1": "heart",
+        "primary_1": "心 or 忄"
+    },
+    {
+        "intermediate_1": "gē",
+        "native_1": "spear",
+        "primary_1": "戈"
+    },
+    {
+        "intermediate_1": "hù",
+        "native_1": "door",
+        "primary_1": "户"
+    },
+    {
+        "intermediate_1": "shǒu",
+        "native_1": "hand",
+        "primary_1": "手 or 扌"
+    },
+    {
+        "intermediate_1": "zhī",
+        "native_1": "branch",
+        "primary_1": "支"
+    },
+    {
+        "intermediate_1": "pū",
+        "native_1": "rap",
+        "primary_1": "攴 or 攵"
+    },
+    {
+        "intermediate_1": "wén",
+        "native_1": "script",
+        "primary_1": "文"
+    },
+    {
+        "intermediate_1": "dǒu",
+        "native_1": "dipper",
+        "primary_1": "斗"
+    },
+    {
+        "intermediate_1": "jīn",
+        "native_1": "axe",
+        "primary_1": "斤"
+    },
+    {
+        "intermediate_1": "fāng",
+        "native_1": "square",
+        "primary_1": "方"
+    },
+    {
+        "intermediate_1": "wú",
+        "native_1": "not",
+        "primary_1": "无"
+    },
+    {
+        "intermediate_1": "rì",
+        "native_1": "sun",
+        "primary_1": "日"
+    },
+    {
+        "intermediate_1": "yuē",
+        "native_1": "say",
+        "primary_1": "曰"
+    },
+    {
+        "intermediate_1": "yuè",
+        "native_1": "moon",
+        "primary_1": "月"
+    },
+    {
+        "intermediate_1": "mù",
+        "native_1": "tree",
+        "primary_1": "木"
+    },
+    {
+        "intermediate_1": "qiàn",
+        "native_1": "lack",
+        "primary_1": "欠"
+    },
+    {
+        "intermediate_1": "zhǐ",
+        "native_1": "stop",
+        "primary_1": "止"
+    },
+    {
+        "intermediate_1": "dǎi",
+        "native_1": "death",
+        "primary_1": "歹"
+    },
+    {
+        "intermediate_1": "shū",
+        "native_1": "weapon",
+        "primary_1": "殳"
+    },
+    {
+        "intermediate_1": "mǔ",
+        "native_1": "mother",
+        "primary_1": "母 or 毋"
+    },
+    {
+        "intermediate_1": "bǐ",
+        "native_1": "compare",
+        "primary_1": "比"
+    },
+    {
+        "intermediate_1": "máo",
+        "native_1": "fur",
+        "primary_1": "毛"
+    },
+    {
+        "intermediate_1": "shì",
+        "native_1": "clan",
+        "primary_1": "氏"
+    },
+    {
+        "intermediate_1": "qì",
+        "native_1": "steam",
+        "primary_1": "气"
+    },
+    {
+        "intermediate_1": "shuǐ",
+        "native_1": "water",
+        "primary_1": "水 or 氵"
+    },
+    {
+        "intermediate_1": "huǒ",
+        "native_1": "fire",
+        "primary_1": "火 or 灬"
+    },
+    {
+        "intermediate_1": "zhǎo",
+        "native_1": "claw",
+        "primary_1": "爪 or 爫"
+    },
+    {
+        "intermediate_1": "fù",
+        "native_1": "father",
+        "primary_1": "父"
+    },
+    {
+        "intermediate_1": "yáo",
+        "native_1": "lines on a trigram",
+        "primary_1": "爻"
+    },
+    {
+        "intermediate_1": "qiáng",
+        "native_1": "half of a tree trunk",
+        "primary_1": "爿"
+    },
+    {
+        "intermediate_1": "piàn",
+        "native_1": "slice",
+        "primary_1": "片"
+    },
+    {
+        "intermediate_1": "yá",
+        "native_1": "tooth",
+        "primary_1": "牙"
+    },
+    {
+        "intermediate_1": "niú",
+        "native_1": "cow",
+        "primary_1": "牛 or 牜"
+    },
+    {
+        "intermediate_1": "quǎn",
+        "native_1": "dog",
+        "primary_1": "犭 or 犬"
+    },
+    {
+        "intermediate_1": "xuán",
+        "native_1": "profound",
+        "primary_1": "玄"
+    },
+    {
+        "intermediate_1": "yù",
+        "native_1": "jade",
+        "primary_1": "玉 or 王"
+    },
+    {
+        "intermediate_1": "guā",
+        "native_1": "melon",
+        "primary_1": "瓜"
+    },
+    {
+        "intermediate_1": "wǎ",
+        "native_1": "tile",
+        "primary_1": "瓦"
+    },
+    {
+        "intermediate_1": "gān",
+        "native_1": "sweet",
+        "primary_1": "甘"
+    },
+    {
+        "intermediate_1": "shēng",
+        "native_1": "life",
+        "primary_1": "生"
+    },
+    {
+        "intermediate_1": "yòng",
+        "native_1": "use",
+        "primary_1": "用"
+    },
+    {
+        "intermediate_1": "tián",
+        "native_1": "field",
+        "primary_1": "田"
+    },
+    {
+        "intermediate_1": "pǐ",
+        "native_1": "cloth",
+        "primary_1": "疋"
+    },
+    {
+        "intermediate_1": "bìng",
+        "native_1": "ill",
+        "primary_1": "疒"
+    },
+    {
+        "intermediate_1": "bō",
+        "native_1": "foot steps",
+        "primary_1": "癶"
+    },
+    {
+        "intermediate_1": "bái",
+        "native_1": "white",
+        "primary_1": "白"
+    },
+    {
+        "intermediate_1": "pí",
+        "native_1": "skin",
+        "primary_1": "皮"
+    },
+    {
+        "intermediate_1": "mǐn",
+        "native_1": "dish",
+        "primary_1": "皿"
+    },
+    {
+        "intermediate_1": "mù",
+        "native_1": "eye",
+        "primary_1": "目"
+    },
+    {
+        "intermediate_1": "máo",
+        "native_1": "spear",
+        "primary_1": "矛"
+    },
+    {
+        "intermediate_1": "shǐ",
+        "native_1": "arrow",
+        "primary_1": "矢"
+    },
+    {
+        "intermediate_1": "shí",
+        "native_1": "stone",
+        "primary_1": "石"
+    },
+    {
+        "intermediate_1": "shì",
+        "native_1": "spirit",
+        "primary_1": "示 or 礻"
+    },
+    {
+        "intermediate_1": "róu",
+        "native_1": "track",
+        "primary_1": "禸"
+    },
+    {
+        "intermediate_1": "hé",
+        "native_1": "grain",
+        "primary_1": "禾"
+    },
+    {
+        "intermediate_1": "xuè",
+        "native_1": "cave",
+        "primary_1": "穴"
+    },
+    {
+        "intermediate_1": "lì",
+        "native_1": "stand",
+        "primary_1": "立"
+    },
+    {
+        "intermediate_1": "zhú",
+        "native_1": "bamboo",
+        "primary_1": "竹"
+    },
+    {
+        "intermediate_1": "mǐ",
+        "native_1": "rice",
+        "primary_1": "米"
+    },
+    {
+        "intermediate_1": "sī",
+        "native_1": "silk",
+        "primary_1": "纟 or (糸)"
+    },
+    {
+        "intermediate_1": "fǒu",
+        "native_1": "jar",
+        "primary_1": "缶"
+    },
+    {
+        "intermediate_1": "wǎng",
+        "native_1": "net",
+        "primary_1": "网 or 罒"
+    },
+    {
+        "intermediate_1": "yáng",
+        "native_1": "sheep",
+        "primary_1": "羊"
+    },
+    {
+        "intermediate_1": "yǔ",
+        "native_1": "feather",
+        "primary_1": "羽"
+    },
+    {
+        "intermediate_1": "lǎo",
+        "native_1": "old",
+        "primary_1": "老"
+    },
+    {
+        "intermediate_1": "ér",
+        "native_1": "and",
+        "primary_1": "而"
+    },
+    {
+        "intermediate_1": "lěi",
+        "native_1": "plow",
+        "primary_1": "耒"
+    },
+    {
+        "intermediate_1": "ěr",
+        "native_1": "ear",
+        "primary_1": "耳"
+    },
+    {
+        "intermediate_1": "yù",
+        "native_1": "brush",
+        "primary_1": "聿"
+    },
+    {
+        "intermediate_1": "ròu",
+        "native_1": "meat",
+        "primary_1": "肉"
+    },
+    {
+        "intermediate_1": "chén",
+        "native_1": "minister",
+        "primary_1": "臣"
+    },
+    {
+        "intermediate_1": "zì",
+        "native_1": "oneself",
+        "primary_1": "自"
+    },
+    {
+        "intermediate_1": "zhì",
+        "native_1": "arrive",
+        "primary_1": "至"
+    },
+    {
+        "intermediate_1": "jiù",
+        "native_1": "mortar",
+        "primary_1": "臼"
+    },
+    {
+        "intermediate_1": "shé",
+        "native_1": "tongue",
+        "primary_1": "舌"
+    },
+    {
+        "intermediate_1": "chuǎn",
+        "native_1": "contrary",
+        "primary_1": "舛"
+    },
+    {
+        "intermediate_1": "zhōu",
+        "native_1": "boat",
+        "primary_1": "舟"
+    },
+    {
+        "intermediate_1": "gèn",
+        "native_1": "mountain",
+        "primary_1": "艮"
+    },
+    {
+        "intermediate_1": "sè",
+        "native_1": "color",
+        "primary_1": "色"
+    },
+    {
+        "intermediate_1": "cǎo",
+        "native_1": "grass",
+        "primary_1": "艹"
+    },
+    {
+        "intermediate_1": "hǔ",
+        "native_1": "tiger",
+        "primary_1": "虍"
+    },
+    {
+        "intermediate_1": "chóng",
+        "native_1": "insect",
+        "primary_1": "虫"
+    },
+    {
+        "intermediate_1": "xuě",
+        "native_1": "blood",
+        "primary_1": "血"
+    },
+    {
+        "intermediate_1": "xíng",
+        "native_1": "walk",
+        "primary_1": "行"
+    },
+    {
+        "intermediate_1": "yī",
+        "native_1": "clothes",
+        "primary_1": "衣 or 衤"
+    },
+    {
+        "intermediate_1": "xī",
+        "native_1": "west",
+        "primary_1": "西 or 覀"
+    },
+    {
+        "intermediate_1": "jiàn",
+        "native_1": "see",
+        "primary_1": "见 or (見)"
+    },
+    {
+        "intermediate_1": "jiǎo",
+        "native_1": "horn",
+        "primary_1": "角"
+    },
+    {
+        "intermediate_1": "yán",
+        "native_1": "speech",
+        "primary_1": "讠or (言)"
+    },
+    {
+        "intermediate_1": "gǔ",
+        "native_1": "valley",
+        "primary_1": "谷"
+    },
+    {
+        "intermediate_1": "dòu",
+        "native_1": "bean",
+        "primary_1": "豆"
+    },
+    {
+        "intermediate_1": "shǐ",
+        "native_1": "pig",
+        "primary_1": "豕"
+    },
+    {
+        "intermediate_1": "zhì",
+        "native_1": "badger",
+        "primary_1": "豸"
+    },
+    {
+        "intermediate_1": "bèi",
+        "native_1": "shell",
+        "primary_1": "贝 or (貝)"
+    },
+    {
+        "intermediate_1": "chì",
+        "native_1": "red",
+        "primary_1": "赤"
+    },
+    {
+        "intermediate_1": "zǒu",
+        "native_1": "walk",
+        "primary_1": "走"
+    },
+    {
+        "intermediate_1": "zú",
+        "native_1": "foot",
+        "primary_1": "足"
+    },
+    {
+        "intermediate_1": "shēn",
+        "native_1": "body",
+        "primary_1": "身"
+    },
+    {
+        "intermediate_1": "chē",
+        "native_1": "cart",
+        "primary_1": "车 or (車)"
+    },
+    {
+        "intermediate_1": "xīn",
+        "native_1": "bitter",
+        "primary_1": "辛"
+    },
+    {
+        "intermediate_1": "chén",
+        "native_1": "morning",
+        "primary_1": "辰"
+    },
+    {
+        "intermediate_1": "chuò",
+        "native_1": "walk",
+        "primary_1": "辶"
+    },
+    {
+        "intermediate_1": "yì",
+        "native_1": "city",
+        "primary_1": "邑 or 阝"
+    },
+    {
+        "intermediate_1": "yǒu",
+        "native_1": "wine",
+        "primary_1": "酉"
+    },
+    {
+        "intermediate_1": "biàn",
+        "native_1": "distinguish",
+        "primary_1": "釆"
+    },
+    {
+        "intermediate_1": "lǐ",
+        "native_1": "village",
+        "primary_1": "里"
+    },
+    {
+        "intermediate_1": "jīn",
+        "native_1": "metal",
+        "primary_1": "钅 or 金"
+    },
+    {
+        "intermediate_1": "cháng",
+        "native_1": "long",
+        "primary_1": "长 or (長)"
+    },
+    {
+        "intermediate_1": "mén",
+        "native_1": "gate",
+        "primary_1": "门 or (門)"
+    },
+    {
+        "intermediate_1": "fù",
+        "native_1": "mound",
+        "primary_1": "阜 or 阝"
+    },
+    {
+        "intermediate_1": "lì",
+        "native_1": "slave",
+        "primary_1": "隶"
+    },
+    {
+        "intermediate_1": "zhuī",
+        "native_1": "short-tailed bird",
+        "primary_1": "隹"
+    },
+    {
+        "intermediate_1": "yǔ",
+        "native_1": "rain",
+        "primary_1": "雨"
+    },
+    {
+        "intermediate_1": "qīng",
+        "native_1": "blue",
+        "primary_1": "青"
+    },
+    {
+        "intermediate_1": "fēi",
+        "native_1": "wrong",
+        "primary_1": "非"
+    },
+    {
+        "intermediate_1": "miàn",
+        "native_1": "face",
+        "primary_1": "面"
+    },
+    {
+        "intermediate_1": "gé",
+        "native_1": "leather",
+        "primary_1": "革"
+    },
+    {
+        "intermediate_1": "wěi",
+        "native_1": "soft leather",
+        "primary_1": "韦 or (韋)"
+    },
+    {
+        "intermediate_1": "jiǔ",
+        "native_1": "leek",
+        "primary_1": "韭"
+    },
+    {
+        "intermediate_1": "yīn",
+        "native_1": "sound",
+        "primary_1": "音"
+    },
+    {
+        "intermediate_1": "yè",
+        "native_1": "page",
+        "primary_1": "页 or (頁)"
+    },
+    {
+        "intermediate_1": "fēng",
+        "native_1": "wind",
+        "primary_1": "风 or (風)"
+    },
+    {
+        "intermediate_1": "fēi",
+        "native_1": "fly",
+        "primary_1": "飞 or (飛)"
+    },
+    {
+        "intermediate_1": "shí",
+        "native_1": "eat",
+        "primary_1": "饣 or 飠 or 食"
+    },
+    {
+        "intermediate_1": "shǒu",
+        "native_1": "head",
+        "primary_1": "首"
+    },
+    {
+        "intermediate_1": "xiāng",
+        "native_1": "fragrant",
+        "primary_1": "香"
+    },
+    {
+        "intermediate_1": "mǎ",
+        "native_1": "horse",
+        "primary_1": "马 or (馬)"
+    },
+    {
+        "intermediate_1": "gǔ",
+        "native_1": "bone",
+        "primary_1": "骨"
+    },
+    {
+        "intermediate_1": "gāo",
+        "native_1": "high",
+        "primary_1": "高"
+    },
+    {
+        "intermediate_1": "biāo",
+        "native_1": "long hair",
+        "primary_1": "髟"
+    },
+    {
+        "intermediate_1": "dòu",
+        "native_1": "fight",
+        "primary_1": "鬥"
+    },
+    {
+        "intermediate_1": "chàng",
+        "native_1": "sacrificial wine",
+        "primary_1": "鬯"
+    },
+    {
+        "intermediate_1": "lì",
+        "native_1": "cauldron",
+        "primary_1": "鬲"
+    },
+    {
+        "intermediate_1": "guǐ",
+        "native_1": "ghost",
+        "primary_1": "鬼"
+    },
+    {
+        "intermediate_1": "yú",
+        "native_1": "fish",
+        "primary_1": "鱼 or (魚)"
+    },
+    {
+        "intermediate_1": "niǎo",
+        "native_1": "bird",
+        "primary_1": "鸟 or (鳥)"
+    },
+    {
+        "intermediate_1": "lǔ",
+        "native_1": "salty",
+        "primary_1": "卤"
+    },
+    {
+        "intermediate_1": "lù",
+        "native_1": "deer",
+        "primary_1": "鹿"
+    },
+    {
+        "intermediate_1": "mài",
+        "native_1": "wheat",
+        "primary_1": "麦 or (麥)"
+    },
+    {
+        "intermediate_1": "má",
+        "native_1": "hemp",
+        "primary_1": "麻"
+    },
+    {
+        "intermediate_1": "huáng",
+        "native_1": "yellow",
+        "primary_1": "黄"
+    },
+    {
+        "intermediate_1": "shǔ",
+        "native_1": "millet",
+        "primary_1": "黍"
+    },
+    {
+        "intermediate_1": "hēi",
+        "native_1": "black",
+        "primary_1": "黑"
+    },
+    {
+        "intermediate_1": "zhǐ",
+        "native_1": "embroidery",
+        "primary_1": "黹"
+    },
+    {
+        "intermediate_1": "mǐn",
+        "native_1": "frog",
+        "primary_1": "黾 or (黽)"
+    },
+    {
+        "intermediate_1": "dǐng",
+        "native_1": "tripod",
+        "primary_1": "鼎"
+    },
+    {
+        "intermediate_1": "gǔ",
+        "native_1": "drum",
+        "primary_1": "鼓"
+    },
+    {
+        "intermediate_1": "shǔ",
+        "native_1": "rat",
+        "primary_1": "鼠"
+    },
+    {
+        "intermediate_1": "bí",
+        "native_1": "nose",
+        "primary_1": "鼻"
+    },
+    {
+        "intermediate_1": "qí",
+        "native_1": "even",
+        "primary_1": "齐 or (齊)"
+    },
+    {
+        "intermediate_1": "chǐ",
+        "native_1": "tooth",
+        "primary_1": "齿 or (齒)"
+    },
+    {
+        "intermediate_1": "lóng",
+        "native_1": "dragon",
+        "primary_1": "龙 or (龍)"
+    },
+    {
+        "intermediate_1": "guī",
+        "native_1": "turtle",
+        "primary_1": "龟 or (龜)"
+    },
+    {
+        "intermediate_1": "yuè",
+        "native_1": "flute",
+        "primary_1": "龠"
+    }
+]
