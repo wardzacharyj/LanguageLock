@@ -1,0 +1,908 @@
+[
+    {
+        "pinyin": "ba",
+        "translation": "particle indicating polite suggestion; | onomatopoeia | bar (serving drinks, providing internet access, etc.)",
+        "simplified": "吧",
+        "traditional": "吧"
+    },
+    {
+        "pinyin": "bái",
+        "translation": "white; snowy; pure; bright; empty (Kangxi radical 106)",
+        "simplified": "白",
+        "traditional": "白"
+    },
+    {
+        "pinyin": "bǎi",
+        "translation": "hundred",
+        "simplified": "百",
+        "traditional": "百"
+    },
+    {
+        "pinyin": "bāngzhù",
+        "translation": "help; assist; aid",
+        "simplified": "帮助",
+        "traditional": "幫助"
+    },
+    {
+        "pinyin": "bàozhǐ",
+        "translation": "newspaper",
+        "simplified": "报纸",
+        "traditional": "報紙"
+    },
+    {
+        "pinyin": "bǐ",
+        "translation": "compare; (indicates comparison) (Kangxi radical 81); to gesticulate as one talks",
+        "simplified": "比",
+        "traditional": "比"
+    },
+    {
+        "pinyin": "bié",
+        "translation": "don't do something; don't | depart; | other; difference; distinguish",
+        "simplified": "别",
+        "traditional": "別"
+    },
+    {
+        "pinyin": "bīnguǎn",
+        "translation": "guesthouse; hotel",
+        "simplified": "宾馆",
+        "traditional": "賓館"
+    },
+    {
+        "pinyin": "cháng, zhǎng",
+        "translation": "long; length | grow; chief (Kangxi radical 168)",
+        "simplified": "长",
+        "traditional": "長"
+    },
+    {
+        "pinyin": "chànggē",
+        "translation": "sing (a song)",
+        "simplified": "唱歌",
+        "traditional": "唱歌"
+    },
+    {
+        "pinyin": "chū",
+        "translation": "go out; occur",
+        "simplified": "出",
+        "traditional": "出"
+    },
+    {
+        "pinyin": "chuān",
+        "translation": "to wear; put on; penetrate",
+        "simplified": "穿",
+        "traditional": "穿"
+    },
+    {
+        "pinyin": "cì",
+        "translation": "(mw for number of times of occurrence); nth; order",
+        "simplified": "次",
+        "traditional": "次"
+    },
+    {
+        "pinyin": "cóng",
+        "translation": "from; obey; observe",
+        "simplified": "从",
+        "traditional": "從"
+    },
+    {
+        "pinyin": "cuò",
+        "translation": "mistake; error; blunder; miss an opportunity",
+        "simplified": "错",
+        "traditional": "錯"
+    },
+    {
+        "pinyin": "dǎ lánqiú",
+        "translation": "play basketball",
+        "simplified": "打篮球",
+        "traditional": "打籃球"
+    },
+    {
+        "pinyin": "dàjiā",
+        "translation": "everyone",
+        "simplified": "大家",
+        "traditional": "大家"
+    },
+    {
+        "pinyin": "dào",
+        "translation": "arrive (at a place); until (a time)",
+        "simplified": "到",
+        "traditional": "到"
+    },
+    {
+        "pinyin": "de",
+        "translation": "(complement particle)",
+        "simplified": "得",
+        "traditional": "得"
+    },
+    {
+        "pinyin": "děng",
+        "translation": "to wait; rank; equal; etc.",
+        "simplified": "等",
+        "traditional": "等"
+    },
+    {
+        "pinyin": "dìdi",
+        "translation": "younger brother",
+        "simplified": "弟弟",
+        "traditional": "弟弟"
+    },
+    {
+        "pinyin": "dìyī",
+        "translation": "first; number 1",
+        "simplified": "第一",
+        "traditional": "第一"
+    },
+    {
+        "pinyin": "dǒng",
+        "translation": "understand; know",
+        "simplified": "懂",
+        "traditional": "懂"
+    },
+    {
+        "pinyin": "duì",
+        "translation": "correct; a pair; to face; be opposite; to; towards",
+        "simplified": "对",
+        "traditional": "對"
+    },
+    {
+        "pinyin": "fángjiān",
+        "translation": "room",
+        "simplified": "房间",
+        "traditional": "房間"
+    },
+    {
+        "pinyin": "fēicháng",
+        "translation": "extremely; extraordinary; very",
+        "simplified": "非常",
+        "traditional": "非常"
+    },
+    {
+        "pinyin": "fúwùyuán",
+        "translation": "waiter/waitress; server; attendant",
+        "simplified": "服务员",
+        "traditional": "服務員"
+    },
+    {
+        "pinyin": "gāo",
+        "translation": "high; tall (Kangxi radical 189)",
+        "simplified": "高",
+        "traditional": "高"
+    },
+    {
+        "pinyin": "gàosu",
+        "translation": "to tell; inform",
+        "simplified": "告诉",
+        "traditional": "告訴"
+    },
+    {
+        "pinyin": "gēge",
+        "translation": "older brother",
+        "simplified": "哥哥",
+        "traditional": "哥哥"
+    },
+    {
+        "pinyin": "gěi",
+        "translation": "to give; to grant; (passive particle)",
+        "simplified": "给",
+        "traditional": "給"
+    },
+    {
+        "pinyin": "gōnggòng qìchē",
+        "translation": "(public) bus",
+        "simplified": "公共汽车",
+        "traditional": "公共汽車"
+    },
+    {
+        "pinyin": "gōngsī",
+        "translation": "company; corporation",
+        "simplified": "公司",
+        "traditional": "公司"
+    },
+    {
+        "pinyin": "guì",
+        "translation": "expensive; noble; honorable; Guizhou province (abbreviation)",
+        "simplified": "贵",
+        "traditional": "貴"
+    },
+    {
+        "pinyin": "guò",
+        "translation": "to pass; to cross; go over; (indicates a past experience)",
+        "simplified": "过",
+        "traditional": "過"
+    },
+    {
+        "pinyin": "hái",
+        "translation": "still; yet; in addition; even",
+        "simplified": "还",
+        "traditional": "還"
+    },
+    {
+        "pinyin": "háizi",
+        "translation": "child; children; son or daughter",
+        "simplified": "孩子",
+        "traditional": "孩子"
+    },
+    {
+        "pinyin": "hǎochī",
+        "translation": "tasty",
+        "simplified": "好吃",
+        "traditional": "好吃"
+    },
+    {
+        "pinyin": "hēi",
+        "translation": "black; dark (Kangxi radical 203); Heilongjiang province (abbreviation)",
+        "simplified": "黑",
+        "traditional": "黑"
+    },
+    {
+        "pinyin": "hóng",
+        "translation": "red; symbol of success; bonus; popular",
+        "simplified": "红",
+        "traditional": "紅"
+    },
+    {
+        "pinyin": "huǒchēzhàn",
+        "translation": "train station",
+        "simplified": "火车站",
+        "traditional": "火車站"
+    },
+    {
+        "pinyin": "jīchǎng",
+        "translation": "airport; airfield",
+        "simplified": "机场",
+        "traditional": "機場"
+    },
+    {
+        "pinyin": "jīdàn",
+        "translation": "(chicken) egg",
+        "simplified": "鸡蛋",
+        "traditional": "雞蛋"
+    },
+    {
+        "pinyin": "jiàn",
+        "translation": "(mw for things, clothes, and items)",
+        "simplified": "件",
+        "traditional": "件"
+    },
+    {
+        "pinyin": "jiàoshì",
+        "translation": "classroom",
+        "simplified": "教室",
+        "traditional": "教室"
+    },
+    {
+        "pinyin": "jiějie",
+        "translation": "older sister",
+        "simplified": "姐姐",
+        "traditional": "姐姐"
+    },
+    {
+        "pinyin": "jièshào",
+        "translation": "to introduce; recommend; introduction",
+        "simplified": "介绍",
+        "traditional": "介紹"
+    },
+    {
+        "pinyin": "jìn",
+        "translation": "enter; come in",
+        "simplified": "进",
+        "traditional": "進"
+    },
+    {
+        "pinyin": "jìn",
+        "translation": "near; close (to)",
+        "simplified": "近",
+        "traditional": "近"
+    },
+    {
+        "pinyin": "jiù",
+        "translation": "then; at once; just; only; with regard to",
+        "simplified": "就",
+        "traditional": "就"
+    },
+    {
+        "pinyin": "juéde",
+        "translation": "feel; think",
+        "simplified": "觉得",
+        "traditional": "覺得"
+    },
+    {
+        "pinyin": "kāfēi",
+        "translation": "coffee",
+        "simplified": "咖啡",
+        "traditional": "咖啡"
+    },
+    {
+        "pinyin": "kāishǐ",
+        "translation": "begin; to start; beginning",
+        "simplified": "开始",
+        "traditional": "開始"
+    },
+    {
+        "pinyin": "kǎoshì",
+        "translation": "test; exam; to give or take a test",
+        "simplified": "考试",
+        "traditional": "考試"
+    },
+    {
+        "pinyin": "kěnéng",
+        "translation": "possible; maybe",
+        "simplified": "可能",
+        "traditional": "可能"
+    },
+    {
+        "pinyin": "kěyǐ",
+        "translation": "can; may; possible; okay",
+        "simplified": "可以",
+        "traditional": "可以"
+    },
+    {
+        "pinyin": "kè",
+        "translation": "class; subject; lesson; course",
+        "simplified": "课",
+        "traditional": "課"
+    },
+    {
+        "pinyin": "kuài",
+        "translation": "fast; quick; swift",
+        "simplified": "快",
+        "traditional": "快"
+    },
+    {
+        "pinyin": "kuàilè",
+        "translation": "happy",
+        "simplified": "快乐",
+        "traditional": "快樂"
+    },
+    {
+        "pinyin": "lèi",
+        "translation": "tired",
+        "simplified": "累",
+        "traditional": "累"
+    },
+    {
+        "pinyin": "lí",
+        "translation": "leave; depart; go away; apart from",
+        "simplified": "离",
+        "traditional": "離"
+    },
+    {
+        "pinyin": "liǎng",
+        "translation": "two; 2; both; (unit of weight equal to 50 grams)",
+        "simplified": "两",
+        "traditional": "兩"
+    },
+    {
+        "pinyin": "líng",
+        "translation": "zero; remnant",
+        "simplified": "零",
+        "traditional": "零"
+    },
+    {
+        "pinyin": "lù",
+        "translation": "road; path; journey; route",
+        "simplified": "路",
+        "traditional": "路"
+    },
+    {
+        "pinyin": "lǚyóu",
+        "translation": "trip; journey; tour",
+        "simplified": "旅游",
+        "traditional": "旅游"
+    },
+    {
+        "pinyin": "mài",
+        "translation": "to sell",
+        "simplified": "卖",
+        "traditional": "賣"
+    },
+    {
+        "pinyin": "màn",
+        "translation": "slow",
+        "simplified": "慢",
+        "traditional": "慢"
+    },
+    {
+        "pinyin": "máng",
+        "translation": "busy",
+        "simplified": "忙",
+        "traditional": "忙"
+    },
+    {
+        "pinyin": "měi",
+        "translation": "each; every",
+        "simplified": "每",
+        "traditional": "每"
+    },
+    {
+        "pinyin": "mèimei",
+        "translation": "younger sister",
+        "simplified": "妹妹",
+        "traditional": "妹妹"
+    },
+    {
+        "pinyin": "mén",
+        "translation": "door; opening; gate (Kangxi radical 169)",
+        "simplified": "门",
+        "traditional": "門"
+    },
+    {
+        "pinyin": "miàntiáo",
+        "translation": "noodles",
+        "simplified": "面条",
+        "traditional": "面條"
+    },
+    {
+        "pinyin": "nán",
+        "translation": "male",
+        "simplified": "男",
+        "traditional": "男"
+    },
+    {
+        "pinyin": "nín",
+        "translation": "you (polite)",
+        "simplified": "您",
+        "traditional": "您"
+    },
+    {
+        "pinyin": "niúnǎi",
+        "translation": "cow's milk",
+        "simplified": "牛奶",
+        "traditional": "牛奶"
+    },
+    {
+        "pinyin": "nǚ",
+        "translation": "woman; female (Kangxi radical 38)",
+        "simplified": "女",
+        "traditional": "女"
+    },
+    {
+        "pinyin": "pángbiān",
+        "translation": "side, beside",
+        "simplified": "旁边",
+        "traditional": "旁邊"
+    },
+    {
+        "pinyin": "pǎobù",
+        "translation": "to run; to jog",
+        "simplified": "跑步",
+        "traditional": "跑步"
+    },
+    {
+        "pinyin": "piányi",
+        "translation": "cheap",
+        "simplified": "便宜",
+        "traditional": "便宜"
+    },
+    {
+        "pinyin": "piào",
+        "translation": "ticket; bank note; a vote",
+        "simplified": "票",
+        "traditional": "票"
+    },
+    {
+        "pinyin": "qīzi",
+        "translation": "wife",
+        "simplified": "妻子",
+        "traditional": "妻子"
+    },
+    {
+        "pinyin": "qǐ chuáng",
+        "translation": "get out of bed",
+        "simplified": "起床",
+        "traditional": "起床"
+    },
+    {
+        "pinyin": "qiān",
+        "translation": "one thousand",
+        "simplified": "千",
+        "traditional": "千"
+    },
+    {
+        "pinyin": "qiānbǐ",
+        "translation": "pencil",
+        "simplified": "铅笔",
+        "traditional": "鉛筆"
+    },
+    {
+        "pinyin": "qíng",
+        "translation": "clear; fine (as of weather)",
+        "simplified": "晴",
+        "traditional": "晴"
+    },
+    {
+        "pinyin": "qùnián",
+        "translation": "last year",
+        "simplified": "去年",
+        "traditional": "去年"
+    },
+    {
+        "pinyin": "ràng",
+        "translation": "ask; let; yield",
+        "simplified": "让",
+        "traditional": "讓"
+    },
+    {
+        "pinyin": "rì",
+        "translation": "sun; day; date; time (Kangxi radical 72)",
+        "simplified": "日",
+        "traditional": "日"
+    },
+    {
+        "pinyin": "shàngbān",
+        "translation": "go to work; be on duty",
+        "simplified": "上班",
+        "traditional": "上班"
+    },
+    {
+        "pinyin": "shēntǐ",
+        "translation": "health; (human) body",
+        "simplified": "身体",
+        "traditional": "身體"
+    },
+    {
+        "pinyin": "shēngbìng",
+        "translation": "get sick; fall ill",
+        "simplified": "生病",
+        "traditional": "生病"
+    },
+    {
+        "pinyin": "shēngrì",
+        "translation": "birthday",
+        "simplified": "生日",
+        "traditional": "生日"
+    },
+    {
+        "pinyin": "shíjiān",
+        "translation": "time; period",
+        "simplified": "时间",
+        "traditional": "時間"
+    },
+    {
+        "pinyin": "shìqing",
+        "translation": "matter; affair; thing; business",
+        "simplified": "事情",
+        "traditional": "事情"
+    },
+    {
+        "pinyin": "shǒubiǎo",
+        "translation": "wristwatch",
+        "simplified": "手表",
+        "traditional": "手表"
+    },
+    {
+        "pinyin": "shǒujī",
+        "translation": "mobile (cell) phone",
+        "simplified": "手机",
+        "traditional": "手機"
+    },
+    {
+        "pinyin": "shuōhuà",
+        "translation": "to talk; speak",
+        "simplified": "说话",
+        "traditional": "說話"
+    },
+    {
+        "pinyin": "sòng",
+        "translation": "deliver; to carry; to give; send",
+        "simplified": "送",
+        "traditional": "送"
+    },
+    {
+        "pinyin": "suīrán",
+        "translation": "although; even though",
+        "simplified": "虽然",
+        "traditional": "雖然"
+    },
+    {
+        "pinyin": "dànshì",
+        "translation": "but; however",
+        "simplified": "但是",
+        "traditional": "但是"
+    },
+    {
+        "pinyin": "tā",
+        "translation": "it",
+        "simplified": "它",
+        "traditional": "它"
+    },
+    {
+        "pinyin": "tīzúqiú",
+        "translation": "to play football/soccer",
+        "simplified": "踢足球",
+        "traditional": "踢足球"
+    },
+    {
+        "pinyin": "tí",
+        "translation": "topic; subject; question on a test or assignment",
+        "simplified": "题",
+        "traditional": "題"
+    },
+    {
+        "pinyin": "tiàowǔ",
+        "translation": "to dance",
+        "simplified": "跳舞",
+        "traditional": "跳舞"
+    },
+    {
+        "pinyin": "wài",
+        "translation": "outer; outside; in addition; foreign",
+        "simplified": "外",
+        "traditional": "外"
+    },
+    {
+        "pinyin": "wán",
+        "translation": "to finish; be over; complete",
+        "simplified": "完",
+        "traditional": "完"
+    },
+    {
+        "pinyin": "wán",
+        "translation": "to play; have a good time; visit; enjoy",
+        "simplified": "玩",
+        "traditional": "玩"
+    },
+    {
+        "pinyin": "wǎnshang",
+        "translation": "evening; night",
+        "simplified": "晚上",
+        "traditional": "晚上"
+    },
+    {
+        "pinyin": "wǎng",
+        "translation": "to go (in a direction); towards; in the past",
+        "simplified": "往",
+        "traditional": "往"
+    },
+    {
+        "pinyin": "wèishénme",
+        "translation": "why?; for what reason?",
+        "simplified": "为什么",
+        "traditional": "為什麼"
+    },
+    {
+        "pinyin": "wèn",
+        "translation": "ask; inquire",
+        "simplified": "问",
+        "traditional": "問"
+    },
+    {
+        "pinyin": "wèntí",
+        "translation": "question; problem",
+        "simplified": "问题",
+        "traditional": "問題"
+    },
+    {
+        "pinyin": "xīguā",
+        "translation": "watermelon",
+        "simplified": "西瓜",
+        "traditional": "西瓜"
+    },
+    {
+        "pinyin": "xīwàng",
+        "translation": "to hope; wish for; to desire",
+        "simplified": "希望",
+        "traditional": "希望"
+    },
+    {
+        "pinyin": "xǐ",
+        "translation": "to wash; bathe",
+        "simplified": "洗",
+        "traditional": "洗"
+    },
+    {
+        "pinyin": "xiǎoshí",
+        "translation": "hour",
+        "simplified": "小时",
+        "traditional": "小時"
+    },
+    {
+        "pinyin": "xiào",
+        "translation": "to laugh; to smile",
+        "simplified": "笑",
+        "traditional": "笑"
+    },
+    {
+        "pinyin": "xīn",
+        "translation": "new; Xinjiang autonomous region (abbreviation)",
+        "simplified": "新",
+        "traditional": "新"
+    },
+    {
+        "pinyin": "xìng",
+        "translation": "surname; family name",
+        "simplified": "姓",
+        "traditional": "姓"
+    },
+    {
+        "pinyin": "xiūxi",
+        "translation": "to rest; take a break",
+        "simplified": "休息",
+        "traditional": "休息"
+    },
+    {
+        "pinyin": "xuě",
+        "translation": "snow",
+        "simplified": "雪",
+        "traditional": "雪"
+    },
+    {
+        "pinyin": "yánsè",
+        "translation": "color",
+        "simplified": "颜色",
+        "traditional": "顏色"
+    },
+    {
+        "pinyin": "yǎnjing",
+        "translation": "eye",
+        "simplified": "眼睛",
+        "traditional": "眼睛"
+    },
+    {
+        "pinyin": "yángròu",
+        "translation": "mutton; lamb",
+        "simplified": "羊肉",
+        "traditional": "羊肉"
+    },
+    {
+        "pinyin": "yào",
+        "translation": "medicine; drug; cure; chemical",
+        "simplified": "药",
+        "traditional": "藥"
+    },
+    {
+        "pinyin": "yào",
+        "translation": "to want; to need; will/shall; important",
+        "simplified": "要",
+        "traditional": "要"
+    },
+    {
+        "pinyin": "yě",
+        "translation": "also; too",
+        "simplified": "也",
+        "traditional": "也"
+    },
+    {
+        "pinyin": "yìqǐ",
+        "translation": "together; in the same place",
+        "simplified": "一起",
+        "traditional": "一起"
+    },
+    {
+        "pinyin": "yíxià",
+        "translation": "a little bit/while; one time; once",
+        "simplified": "一下",
+        "traditional": "一下"
+    },
+    {
+        "pinyin": "yǐjing",
+        "translation": "already",
+        "simplified": "已经",
+        "traditional": "已經"
+    },
+    {
+        "pinyin": "yìsi",
+        "translation": "meaning; idea; opinion",
+        "simplified": "意思",
+        "traditional": "意思"
+    },
+    {
+        "pinyin": "yīnwèi",
+        "translation": "because",
+        "simplified": "因为",
+        "traditional": "因為"
+    },
+    {
+        "pinyin": "suǒyǐ",
+        "translation": "so; therefore; as a result",
+        "simplified": "所以",
+        "traditional": "所以"
+    },
+    {
+        "pinyin": "yīn",
+        "translation": "cloudy (weather); yin (the negative principle of Yin and Yang); secret; the moon; negative; shade",
+        "simplified": "阴",
+        "traditional": "陰"
+    },
+    {
+        "pinyin": "yóuyǒng",
+        "translation": "to swim",
+        "simplified": "游泳",
+        "traditional": "游泳"
+    },
+    {
+        "pinyin": "yòubian",
+        "translation": "the right (as opposed to left) side",
+        "simplified": "右边",
+        "traditional": "右邊"
+    },
+    {
+        "pinyin": "yú",
+        "translation": "fish (Kangxi radical 195)",
+        "simplified": "鱼",
+        "traditional": "魚"
+    },
+    {
+        "pinyin": "yuǎn",
+        "translation": "far; distant; remote",
+        "simplified": "远",
+        "traditional": "遠"
+    },
+    {
+        "pinyin": "yùndòng",
+        "translation": "(physical) exercise; movement; sports; campaign",
+        "simplified": "运动",
+        "traditional": "運動"
+    },
+    {
+        "pinyin": "zài",
+        "translation": "again; once more",
+        "simplified": "再",
+        "traditional": "再"
+    },
+    {
+        "pinyin": "zǎoshang",
+        "translation": "(early) morning",
+        "simplified": "早上",
+        "traditional": "早上"
+    },
+    {
+        "pinyin": "zhàngfu",
+        "translation": "husband; man",
+        "simplified": "丈夫",
+        "traditional": "丈夫"
+    },
+    {
+        "pinyin": "zhǎo",
+        "translation": "try to find; look for; seek; to give change",
+        "simplified": "找",
+        "traditional": "找"
+    },
+    {
+        "pinyin": "zhe",
+        "translation": "-ing (indicating action in progress)",
+        "simplified": "着",
+        "traditional": "著"
+    },
+    {
+        "pinyin": "zhēn",
+        "translation": "real; true; genuine",
+        "simplified": "真",
+        "traditional": "真"
+    },
+    {
+        "pinyin": "zhèngzài",
+        "translation": "in the process of (doing something); currently",
+        "simplified": "正在",
+        "traditional": "正在"
+    },
+    {
+        "pinyin": "zhīdao",
+        "translation": "know; be aware of",
+        "simplified": "知道",
+        "traditional": "知道"
+    },
+    {
+        "pinyin": "zhǔnbèi",
+        "translation": "prepare; get ready",
+        "simplified": "准备",
+        "traditional": "准備"
+    },
+    {
+        "pinyin": "zǒu",
+        "translation": "to walk; to go; to move (Kangxi radical 156)",
+        "simplified": "走",
+        "traditional": "走"
+    },
+    {
+        "pinyin": "zuì",
+        "translation": "the most; -est; (indicator for superlative)",
+        "simplified": "最",
+        "traditional": "最"
+    },
+    {
+        "pinyin": "zuǒbian",
+        "translation": "the left side; the left",
+        "simplified": "左边",
+        "traditional": "左邊"
+    }
+]
