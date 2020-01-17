@@ -25,6 +25,9 @@ const Term = new GraphQLObjectType({
     partOfSpeech: {
       type: GraphQLString,
     },
+    notes: {
+      type: GraphQLString,
+    },
     history: {
       type: History,
       resolve({ lastStudied, occurencesStudied, durationStudied }) {
