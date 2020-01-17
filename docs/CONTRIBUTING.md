@@ -22,11 +22,11 @@ Below are the guidelines for contributing to Language Lock. The following is int
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the [Language Lock Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to adhere to this code at all times. Please report unacceptable behavior to [wardzacharyj@gmail.com](mailto:wardzacharyj@gmail.com).
+This project and everyone participating in it is governed by the [Language Lock Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to adhere to this code at all times.
 
 ### Design Decisions
 
-When we make a significant decision in how we maintain the project and what we can or cannot support, we will document it in the news wiki (coming soon).
+When we make a significant decision in how we maintain the project and what we can or cannot support, we will document it.
 
 ## How Can I Contribute?
 
@@ -64,14 +64,7 @@ Provide more context by answering these questions:
 * **Can you reliably reproduce the issue?** If not, provide details about how often the problem happens and under which conditions it normally happens.
 * If the problem is related to working with files (e.g. opening and editing files), **does the problem happen for all files and projects or only some?** Does the problem happen only when working with local or remote files (e.g. on network drives), with files of a specific type (e.g. only JavaScript or Python files), with large files or files with very long lines, or with files in a specific encoding? Is there anything else special about the files you are using?
 
-Include details about your configuration and environment:
-
-* **Which version of Android Studio are you using?**
-* **Which version of Android are you testing on?**
-* **What's the name and version of the OS you're using**?
-* **Which version of Android Studio are you using?**
-* **Are you running the application on a virtual device?** If so, which VM software are you using and which operating systems and versions are used for the host and the guest?
-* **Are you using local configuration files?**
+Include details about your configuration and environment.
 
 ### Suggesting Enhancements
 
@@ -110,9 +103,6 @@ Unsure where to begin contributing to Language Lock? You can start by looking th
 * Fill in [the required template](PULL_REQUEST_TEMPLATE.md)
 * Do not include issue numbers in the PR title
 * Include screenshots and animated GIFs in your pull request whenever possible.
-* Follow the [Android AOSP](#java-style-guide) style guide.
-* Document new code using [JavaDoc Documentation Styleguide](http://www.oracle.com/technetwork/articles/java/index-137868.html)
-* End all files with a newline
 * Avoid platform-dependent or deprecated code
 
 ## Style Guides
@@ -140,13 +130,6 @@ Unsure where to begin contributing to Language Lock? You can start by looking th
     * :arrow_up: `:arrow_up:` when upgrading dependencies
     * :arrow_down: `:arrow_down:` when downgrading dependencies
     * :shirt: `:shirt:` when removing linter warnings
-
-### Java Style Guide
-* All java source code should adhere to the [AOSP Java Code Style](https://source.android.com/setup/code-style)
-
-### UI Style Guide
-* This project tries to adhere to the design philosophy and metrics specified by Google's [Material Design](https://material.io/), but not the extent that it limits our ability to exercise our own creative decisions in terms of user experience
-* Hard Coded values should never be specified in a layout file or interface, instead these values should be specified alongside all other values in one res/dims.xml or res/strings.xml file.
 
 
 ### Issue and Pull Request Labels
