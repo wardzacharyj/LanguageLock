@@ -13,6 +13,7 @@ const TermSchema = {
   side3: Sequelize.STRING,
   translation: Sequelize.STRING,
   partOfSpeech: Sequelize.STRING,
+  notes: Sequelize.STRING,
   occurencesStudied: {
     type: Sequelize.INTEGER.UNSIGNED,
     defaultValue: 0,
