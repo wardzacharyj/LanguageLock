@@ -77,5 +77,6 @@ export {
   UserHistory,
   Terms,
   Tags,
-  TermTags
+  TermTags,
+  sequelize
 };

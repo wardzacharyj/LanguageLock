@@ -2,7 +2,11 @@ import {
   GraphQLObjectType,
   GraphQLString,
   GraphQLInt,
+  GraphQLList,
 } from 'graphql';
+import { QueryTypes } from 'sequelize';
+import { Tag } from './tags';
+import { sequelize } from '../../database';
 
 const Term = new GraphQLObjectType({
   name: 'Term',
@@ -27,6 +31,19 @@ const Term = new GraphQLObjectType({
     },
     notes: {
       type: GraphQLString,
+    },
+    tags: {
+      type: GraphQLList(Tag),
+      resolve({ id }) {
+        const getTermTagsQuery = `
+          SELECT Tags.* 
+            FROM TermTags 
+            INNER JOIN Tags 
+            ON TermTags.tagId = Tags.id 
+            WHERE TermTags.termId = ${id}`;
+
+        return sequelize.query(getTermTagsQuery, { raw: true, type: QueryTypes.SELECT });
+      }
     },
     history: {
       type: History,
