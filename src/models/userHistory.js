@@ -4,18 +4,18 @@ const UserHistorySchema = {
   id: {
     type: Sequelize.INTEGER,
     primaryKey: true,
-    autoIncrement: true
+    autoIncrement: true,
   },
   userId: {
     type: Sequelize.INTEGER,
     references: {
       model: 'Users',
       key: 'id',
-    }
+    },
   },
   timeOfLogin: {
     type: Sequelize.DATE,
-  }
+  },
 };
 
 

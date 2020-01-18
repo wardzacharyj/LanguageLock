@@ -1,7 +1,7 @@
 import express from 'express';
 import graphqlHTTP from 'express-graphql';
-import schema from './src/graphql'
 import fs from 'fs';
+import schema from './src/graphql';
 
 const server = express();
 const port = 3000;
@@ -15,24 +15,23 @@ server.get('/backups/:id', async (req, res) => {
   const decodedId = decodeURIComponent(id);
   try {
     const backupExists = await new Promise((resolve, reject) => {
-      fs.stat(`backups/${decodedId}`, (error, statResult) => {
-        if(!error) {
+      fs.stat(`backups/${decodedId}`, (error) => {
+        if (!error) {
           resolve(true);
         } else {
-          reject(false);
+          reject(error);
         }
       });
     });
-  
-    if (backupExists) {
-      res.download(`backups/${decodedId}`);
-    } else {
+
+    if (backupExists instanceof Error) {
       res.send({ error: `Backup ${decodedId} Not Found` });
+    } else {
+      res.download(`backups/${decodedId}`);
     }
-  } catch(error) {
+  } catch (error) {
     res.send({ error: `Backup ${decodedId} Not Found` });
   }
-
 });
 
-server.listen(port, () => console.log('Server Online'));
+server.listen(port);

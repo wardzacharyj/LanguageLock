@@ -1,22 +1,25 @@
 import {
   GraphQLObjectType,
   GraphQLString,
-  GraphQLInt,
   GraphQLList,
 } from 'graphql';
+
 import { QueryTypes } from 'sequelize';
-import { Tag } from './tag';
-import { sequelize } from '../../database';
+import History from './history';
+import Statistics from './statistics';
+
+import Tag from '../tag';
+import { sequelize } from '../../../database';
 
 const Term = new GraphQLObjectType({
   name: 'Term',
   fields: () => ({
-    id: { 
+    id: {
       type: GraphQLString,
     },
     side1: {
       type: GraphQLString,
-    }, 
+    },
     side2: {
       type: GraphQLString,
     },
@@ -43,7 +46,7 @@ const Term = new GraphQLObjectType({
             WHERE TermTags.termId = ${id}`;
 
         return sequelize.query(getTermTagsQuery, { raw: true, type: QueryTypes.SELECT });
-      }
+      },
     },
     history: {
       type: History,
@@ -51,9 +54,9 @@ const Term = new GraphQLObjectType({
         return {
           lastStudied,
           occurencesStudied,
-          durationStudied
+          durationStudied,
         };
-      }
+      },
     },
     statistics: {
       type: Statistics,
@@ -74,58 +77,10 @@ const Term = new GraphQLObjectType({
           side2_incorrect: params.side2_incorrect,
           side3_incorrect: params.side3_incorrect,
         };
-      }
-    }
-  })
+      },
+    },
+  }),
 });
 
-
-const Statistics = new GraphQLObjectType({
-  name: 'Statistics',
-  fields: {
-    side1_correct: {
-      type: GraphQLInt,
-    },
-    side2_correct: {
-      type: GraphQLInt,
-    },
-    side3_correct: {
-      type: GraphQLInt,
-    },
-    side1_unknown: {
-      type: GraphQLInt,
-    },
-    side2_unknown: {
-      type: GraphQLInt,
-    },
-    side3_unknown: {
-      type: GraphQLInt,
-    },
-    side1_incorrect: {
-      type: GraphQLInt,
-    },
-    side2_incorrect: {
-      type: GraphQLInt,
-    },
-    side3_incorrect: {
-      type: GraphQLInt,
-    },    
-  }
-});
-
-const History = new GraphQLObjectType({
-  name: 'History',
-  fields: () => ({
-    lastStudied: {
-      type: GraphQLString,
-    },
-    occurencesStudied: {
-      type: GraphQLInt,
-    },
-    durationStudied: {
-      type: GraphQLInt,
-    },
-  })
-});
 
 export default Term;
