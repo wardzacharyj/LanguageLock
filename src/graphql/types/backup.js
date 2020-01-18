@@ -4,6 +4,8 @@ import {
   GraphQLString,
 } from 'graphql';
 
+const inputDate = filename => new Date(filename.substring(0, filename.indexOf('.')));
+
 const Backup = new GraphQLObjectType({
   name: 'Backup',
   fields: () => ({
@@ -16,36 +18,31 @@ const Backup = new GraphQLObjectType({
     year: {
       type: GraphQLInt,
       resolve({ filename }) {
-        const date = new Date(filename.substring(0, filename.indexOf('.')));
-        return date.getFullYear();
+        return inputDate(filename).getFullYear();
       }
     },
     month: {
       type: GraphQLInt,
       resolve({ filename }) {
-        const date = new Date(filename.substring(0, filename.indexOf('.')));
-        return date.getMonth();
+        return inputDate(filename).getMonth();
       }
     },
     day: {
       type: GraphQLInt,
       resolve({ filename }) {
-        const date = new Date(filename.substring(0, filename.indexOf('.')));
-        return date.getDay();
+        return inputDate(filename).getDay();
       }
     },
     hour: {
       type: GraphQLInt,
       resolve({ filename }) {
-        const date = new Date(filename.substring(0, filename.indexOf('.')));
-        return date.getHours();
+        return inputDate(filename).getHours();
       }
     },
     minute: {
       type: GraphQLInt,
       resolve({ filename }) {
-        const date = new Date(filename.substring(0, filename.indexOf('.')));
-        return date.getMinutes();
+        return inputDate(filename).getMinutes();
       }
     }
   })
