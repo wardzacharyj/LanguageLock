@@ -5,7 +5,7 @@ const TermSchema = {
   id: {
     type: Sequelize.INTEGER,
     primaryKey: true,
-    autoIncrement: true
+    autoIncrement: true,
   },
   lastStudied: Sequelize.DATE,
   side1: Sequelize.STRING,

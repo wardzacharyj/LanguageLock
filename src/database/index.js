@@ -1,4 +1,4 @@
-import Sequelize from 'sequelize'
+import Sequelize from 'sequelize';
 import mysqldump from 'mysqldump';
 import fs from 'fs';
 
@@ -7,7 +7,7 @@ import {
   UserHistorySchema,
   TermSchema,
   TagSchema,
-  TermTagSchema
+  TermTagSchema,
 } from '../models';
 
 const dbName = 'LanguageLock';
@@ -26,16 +26,16 @@ const sequelize = new Sequelize(
       max: 10,
       min: 0,
       acquire: 30000,
-      idle: 10000
-    }
-  }
-)
+      idle: 10000,
+    },
+  },
+);
 
 const Users = sequelize.define('Users', UserSchema);
 const UserHistory = sequelize.define('UserHistory', UserHistorySchema);
 const Terms = sequelize.define('Terms', TermSchema);
 const Tags = sequelize.define('Tags', TagSchema);
-const [ termTagSchema, termTagOptions ] = TermTagSchema;
+const [termTagSchema, termTagOptions] = TermTagSchema;
 const TermTags = sequelize.define('TermTags', termTagSchema, termTagOptions);
 
 
@@ -43,12 +43,10 @@ Terms.hasMany(TermTags, { foreignKey: 'termId', onDelete: 'cascade' });
 Tags.hasMany(TermTags, { foreignKey: 'tagId', onDelete: 'cascade' });
 
 
-
 sequelize
   .sync({ force: true })
   .then(async () => {
-
-    const convertToSchema = entry => ({
+    const convertToSchema = (entry) => ({
       side1: entry.traditional,
       side2: entry.simplified,
       side3: entry.pinyin,
@@ -60,17 +58,18 @@ sequelize
 
       const newHskTag = await Tags.create({ name });
       const newTerms = await Terms.bulkCreate(hskTermJson);
-      const hskTaggedTerms = newTerms.map(newTerm => ({ tagId: newHskTag.id, termId: newTerm.id }));
+      const hskTaggedTerms = newTerms.map((newTerm) => ({
+        tagId:
+        newHskTag.id,
+        termId: newTerm.id,
+      }));
       await TermTags.bulkCreate(hskTaggedTerms);
-    }
+    };
 
     await Promise.all([
       addHskGroup('data/hsk/1.json', 'hsk1'),
-      addHskGroup('data/hsk/2.json', 'hsk2')
-    ])
-
-
-    console.log(`___________________________________________________________`)
+      addHskGroup('data/hsk/2.json', 'hsk2'),
+    ]);
   });
 
 const createBackup = async () => {
@@ -80,7 +79,7 @@ const createBackup = async () => {
     connection: {
       host: 'localhost',
       user: username,
-      password: password,
+      password,
       database: dbName,
     },
     compressFile: true,
@@ -96,5 +95,5 @@ export {
   Tags,
   TermTags,
   sequelize,
-  createBackup
+  createBackup,
 };

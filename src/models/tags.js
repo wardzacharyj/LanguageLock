@@ -5,11 +5,11 @@ const TagSchema = {
   id: {
     type: Sequelize.INTEGER,
     primaryKey: true,
-    autoIncrement: true
+    autoIncrement: true,
   },
-  name: { 
+  name: {
     type: Sequelize.STRING,
-  }
+  },
 };
 
 const TermTagSchema = [
@@ -17,17 +17,17 @@ const TermTagSchema = [
     id: {
       type: Sequelize.INTEGER,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
     },
-  }, 
-  { 
-    uniqueKeys: { 
+  },
+  {
+    uniqueKeys: {
       unique_tag_term: {
-        fields: ["tagId","termId"],
-        customIndex: true
-      }
-    }
-  }
+        fields: ['tagId', 'termId'],
+        customIndex: true,
+      },
+    },
+  },
 ];
 
 export {

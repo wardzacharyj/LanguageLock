@@ -2,64 +2,62 @@ import {
   GraphQLSchema,
   GraphQLObjectType,
   GraphQLList,
-  GraphQLInt
+  GraphQLInt,
 } from 'graphql';
 
 import fs from 'fs';
-import { Terms, Tags, createBackup } from '../database'
-import { Term, Tag, Backup } from './types'
+import { Terms, Tags, createBackup } from '../database';
+import { Term, Tag, Backup } from './types';
 
 
-const RootQuery =  new GraphQLObjectType(
+const RootQuery = new GraphQLObjectType(
   {
     name: 'RootQuery',
     fields: {
       term: {
         type: Term,
         args: {
-          id: { type: GraphQLInt }
+          id: { type: GraphQLInt },
         },
         resolve(root, { id }) {
-          return Terms.findByPk(id);  
-        }
+          return Terms.findByPk(id);
+        },
       },
       tag: {
         type: Tag,
         args: {
-          id: { type: GraphQLInt }
+          id: { type: GraphQLInt },
         },
         resolve(root, { id }) {
           return Tags.findByPk(id);
-        }
+        },
       },
       tags: {
         type: new GraphQLList(Tag),
         resolve() {
           return Tags.findAll();
-        }
+        },
       },
       terms: {
         type: new GraphQLList(Term),
         resolve() {
           return Terms.findAll();
-        }
+        },
       },
       backups: {
         type: new GraphQLList(Backup),
-        resolve() {          
-          return  new Promise((resolve, reject) => {
-            return fs.readdir('backups', (error, filenames) => {
-              if (error) {
-                reject(error) 
-              } else {
-                resolve(filenames.map(name => ({ filename: name })));
-              }
-            });  
-          });
-        }
-      }
-    }
-  }
+        resolve() {
+          return new Promise((resolve, reject) => fs.readdir('backups', (error, filenames) => {
+            if (error) {
+              reject(error);
+            } else {
+              resolve(filenames.map((name) => ({ filename: name })));
+            }
+          }));
+        },
+      },
+    },
+  },
 );
 
 const Mutation = new GraphQLObjectType(
@@ -68,14 +66,12 @@ const Mutation = new GraphQLObjectType(
     fields: {
       createBackup: {
         type: Backup,
-        resolve: async() => {
-          return {
-            filename: await createBackup()
-          }
-        }
+        resolve: async () => ({
+          filename: await createBackup(),
+        }),
       },
-    }
-  }
+    },
+  },
 );
 
 const schema = new GraphQLSchema({
