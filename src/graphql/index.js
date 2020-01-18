@@ -5,13 +5,14 @@ import {
   GraphQLInt
 } from 'graphql';
 
-import { Terms, Tags } from '../database'
-import { Term, Tag } from './types'
+import fs from 'fs';
+import { Terms, Tags, createBackup } from '../database'
+import { Term, Tag, Backup } from './types'
 
 
-const queryType =  new GraphQLObjectType(
+const RootQuery =  new GraphQLObjectType(
   {
-    name: 'Query',
+    name: 'RootQuery',
     fields: {
       term: {
         type: Term,
@@ -42,14 +43,45 @@ const queryType =  new GraphQLObjectType(
         resolve() {
           return Terms.findAll();
         }
+      },
+      backups: {
+        type: new GraphQLList(Backup),
+        resolve() {          
+          return  new Promise((resolve, reject) => {
+            return fs.readdir('backups', (error, filenames) => {
+              if (error) {
+                reject(error) 
+              } else {
+                resolve(filenames.map(name => ({ filename: name })));
+              }
+            });  
+          });
+        }
       }
     }
   }
 );
 
+const Mutation = new GraphQLObjectType(
+  {
+    name: 'Mutation',
+    fields: {
+      createBackup: {
+        type: Backup,
+        resolve: async() => {
+          return {
+            filename: await createBackup()
+          }
+        }
+      },
+    }
+  }
+);
+
 const schema = new GraphQLSchema({
-  query: queryType
-})
+  query: RootQuery,
+  mutation: Mutation,
+});
 
 
 export default schema;

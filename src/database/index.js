@@ -1,4 +1,5 @@
 import Sequelize from 'sequelize'
+import mysqldump from 'mysqldump';
 import fs from 'fs';
 
 import {
@@ -72,11 +73,28 @@ sequelize
     console.log(`___________________________________________________________`)
   });
 
+const createBackup = async () => {
+  const currentISOTime = new Date().toISOString();
+  const dumpToFile = `./backups/${currentISOTime}.sql.gz`;
+  await mysqldump({
+    connection: {
+      host: 'localhost',
+      user: username,
+      password: password,
+      database: dbName,
+    },
+    compressFile: true,
+    dumpToFile,
+  });
+  return `${currentISOTime}.sql.gz`;
+};
+
 export {
   Users,
   UserHistory,
   Terms,
   Tags,
   TermTags,
-  sequelize
+  sequelize,
+  createBackup
 };
