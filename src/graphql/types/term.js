@@ -5,7 +5,7 @@ import {
   GraphQLList,
 } from 'graphql';
 import { QueryTypes } from 'sequelize';
-import { Tag } from './tags';
+import { Tag } from './tag';
 import { sequelize } from '../../database';
 
 const Term = new GraphQLObjectType({
