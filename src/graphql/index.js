@@ -5,8 +5,8 @@ import {
   GraphQLInt
 } from 'graphql';
 
-import { Terms, Tags, TermTags } from '../database'
-import { Term, Tag, TermTag } from './types'
+import { Terms, Tags } from '../database'
+import { Term, Tag } from './types'
 
 
 const queryType =  new GraphQLObjectType(
@@ -22,33 +22,24 @@ const queryType =  new GraphQLObjectType(
           return Terms.findByPk(id);  
         }
       },
-      termsForTag: {
-        type: new GraphQLList(Term),
-        args: {
-          id: { type: GraphQLInt }
-        },
-        resolve: async (root, { tagId }) => {
-          // TODO        
-        }
-      },
       tag: {
         type: Tag,
         args: {
           id: { type: GraphQLInt }
         },
-        resolve: async (root, { id }) => {
+        resolve(root, { id }) {
           return Tags.findByPk(id);
         }
       },
       tags: {
         type: new GraphQLList(Tag),
-        resolve: async () => {
+        resolve() {
           return Tags.findAll();
         }
       },
       terms: {
         type: new GraphQLList(Term),
-        resolve: async () => {
+        resolve() {
           return Terms.findAll();
         }
       }
