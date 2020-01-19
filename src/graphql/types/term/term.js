@@ -49,27 +49,28 @@ const Term = new GraphQLObjectType({
     },
     statistics: {
       type: Statistics,
-      resolve({ id }) {
+      resolve: async ({ id }) => {
         const getTermStats = `
           SELECT
             min(start) AS firstStudied,
             max(end) AS lastStudied,
             count(termId) AS occurencesStudied,
             SUM(timestampdiff(SECOND, start, end)) AS durationStudied,
-            SUM(side1=1 AND correct=1) AS side1_correct,
-            SUM(side1=1 AND unknown=1) AS side1_unknown,
-            SUM(side1=1 AND wrong=1) AS side1_incorrect,
-            SUM(side2=1 AND correct=1) AS side2_correct,
-            SUM(side2=1 AND unknown=1) AS side2_unknown,
-            SUM(side2=1 AND wrong=1) AS side2_incorrect,
-            SUM(side3=1 AND correct=1) AS side3_correct,
-            SUM(side3=1 AND unknown=1) AS side3_unknown,
-            SUM(side1=3 AND wrong=1) AS side3_incorrect
+            SUM(usedSide1=1 AND correct=1) AS side1_correct,
+            SUM(usedSide1=1 AND unknown=1) AS side1_unknown,
+            SUM(usedSide1=1 AND wrong=1) AS side1_wrong,
+            SUM(usedSide2=1 AND correct=1) AS side2_correct,
+            SUM(usedSide2=1 AND unknown=1) AS side2_unknown,
+            SUM(usedSide2=1 AND wrong=1) AS side2_wrong,
+            SUM(usedSide3=1 AND correct=1) AS side3_correct,
+            SUM(usedSide3=1 AND unknown=1) AS side3_unknown,
+            SUM(usedSide3=1 AND wrong=1) AS side3_wrong
               FROM Segments 
               WHERE termId = ${id} GROUP BY termId
           `;
-
-        return sequelize.query(getTermStats, { raw: true, type: QueryTypes.SELECT });
+        const results = await sequelize.query(getTermStats, { raw: true, type: QueryTypes.SELECT });
+        const hasStats = results && results.length > 0;
+        return hasStats ? results[0] : {};
       },
     },
   }),

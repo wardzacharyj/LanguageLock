@@ -7,8 +7,17 @@ import {
 const Statistics = new GraphQLObjectType({
   name: 'Statistics',
   fields: () => ({
+    firstStudied: {
+      type: GraphQLString,
+      resolve({ firstStudied }) {
+        return firstStudied ? firstStudied.toISOString() : null;
+      },
+    },
     lastStudied: {
       type: GraphQLString,
+      resolve({ lastStudied }) {
+        return lastStudied ? lastStudied.toISOString() : null;
+      },
     },
     durationStudied: {
       type: GraphQLInt,
@@ -34,13 +43,13 @@ const Statistics = new GraphQLObjectType({
     side3_unknown: {
       type: GraphQLInt,
     },
-    side1_incorrect: {
+    side1_wrong: {
       type: GraphQLInt,
     },
-    side2_incorrect: {
+    side2_wrong: {
       type: GraphQLInt,
     },
-    side3_incorrect: {
+    side3_wrong: {
       type: GraphQLInt,
     },
   }),

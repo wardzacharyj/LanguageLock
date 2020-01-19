@@ -9,6 +9,7 @@ const SegmentSchema = [
     },
     sessionId: {
       type: Sequelize.INTEGER,
+      allowNull: false,
     },
     start: {
       type: Sequelize.DATE,
@@ -18,36 +19,36 @@ const SegmentSchema = [
       type: Sequelize.DATE,
       allowNull: false,
     },
-    side1: {
+    usedSide1: {
       type: Sequelize.BOOLEAN,
-      defaultValue: 0,
+      defaultValue: false,
     },
-    side2: {
+    usedSide2: {
       type: Sequelize.BOOLEAN,
-      defaultValue: 0,
+      defaultValue: false,
     },
-    side3: {
+    usedSide3: {
       type: Sequelize.BOOLEAN,
-      defaultValue: 0,
+      defaultValue: false,
     },
     correct: {
       type: Sequelize.BOOLEAN,
-      defaultValue: 0,
+      defaultValue: false,
     },
     unknown: {
       type: Sequelize.BOOLEAN,
-      defaultValue: 0,
+      defaultValue: false,
     },
     wrong: {
       type: Sequelize.BOOLEAN,
-      defaultValue: 0,
+      defaultValue: false,
     },
   },
   {
     timestamps: false,
     validate: {
       validSegment() {
-        const hasValidSideQuery = [this.side1, this.side2, this.side3]
+        const hasValidSideQuery = [this.usedSide1, this.usedSide2, this.usedSide3]
           .filter((value) => !!value).length <= 1;
 
         if (!hasValidSideQuery) {
