@@ -4,6 +4,8 @@ import {
   GraphQLString,
   GraphQLBoolean,
 } from 'graphql';
+import { Term } from './term';
+import { Terms } from '../../database';
 
 const Segment = new GraphQLObjectType({
   name: 'Segment',
@@ -11,7 +13,7 @@ const Segment = new GraphQLObjectType({
     id: {
       type: GraphQLInt,
     },
-    sessionId: {
+    batchId: {
       type: GraphQLInt,
     },
     termId: {
@@ -19,9 +21,15 @@ const Segment = new GraphQLObjectType({
     },
     start: {
       type: GraphQLString,
+      resolve({ start }) {
+        return start ? start.toISOString() : null;
+      },
     },
     end: {
       type: GraphQLString,
+      resolve({ end }) {
+        return end ? end.toISOString() : null;
+      },
     },
     usedSide1: {
       type: GraphQLBoolean,
@@ -40,6 +48,12 @@ const Segment = new GraphQLObjectType({
     },
     wrong: {
       type: GraphQLBoolean,
+    },
+    term: {
+      type: Term,
+      resolve({ termId }) {
+        return Terms.findByPk(termId);
+      },
     },
   }),
 });

@@ -7,7 +7,7 @@ const SegmentSchema = [
       primaryKey: true,
       autoIncrement: true,
     },
-    sessionId: {
+    batchId: {
       type: Sequelize.INTEGER,
       allowNull: false,
     },

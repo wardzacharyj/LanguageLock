@@ -1,3 +1,4 @@
+import fs from 'fs';
 import {
   GraphQLSchema,
   GraphQLObjectType,
@@ -7,7 +8,6 @@ import {
   GraphQLBoolean,
 } from 'graphql';
 
-import fs from 'fs';
 import {
   Terms,
   Tags,
@@ -43,6 +43,21 @@ const RootQuery = new GraphQLObjectType(
         },
         resolve(root, { id }) {
           return Tags.findByPk(id);
+        },
+      },
+      batch: {
+        type: new GraphQLList(Segment),
+        args: {
+          id: { type: GraphQLInt },
+        },
+        resolve(root, { id }) {
+          return Segments.findAll({ where: { batchId: id } });
+        },
+      },
+      batches: {
+        type: new GraphQLList(Segment),
+        resolve() {
+          return Segments.findAll();
         },
       },
       tags: {
@@ -87,7 +102,7 @@ const Mutation = new GraphQLObjectType(
         type: Segment,
         args: {
           termId: { type: GraphQLInt },
-          sessionId: { type: GraphQLInt },
+          batchId: { type: GraphQLInt },
           start: { type: GraphQLString },
           end: { type: GraphQLString },
           usedSide1: { type: GraphQLBoolean },
@@ -100,7 +115,7 @@ const Mutation = new GraphQLObjectType(
         resolve(parent, args) {
           return Segments.create({
             termId: args.termId,
-            sessionId: args.sessionId,
+            batchId: args.batchId,
             start: args.start,
             end: args.end,
             usedSide1: !!args.usedSide1,
