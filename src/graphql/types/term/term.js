@@ -5,7 +5,6 @@ import {
 } from 'graphql';
 
 import { QueryTypes } from 'sequelize';
-import History from './history';
 import Statistics from './statistics';
 
 import Tag from '../tag';
@@ -48,35 +47,29 @@ const Term = new GraphQLObjectType({
         return sequelize.query(getTermTagsQuery, { raw: true, type: QueryTypes.SELECT });
       },
     },
-    history: {
-      type: History,
-      resolve({ lastStudied, occurencesStudied, durationStudied }) {
-        return {
-          lastStudied,
-          occurencesStudied,
-          durationStudied,
-        };
-      },
-    },
     statistics: {
       type: Statistics,
-      resolve(params) {
-        return {
-          // Correct
-          side1_correct: params.side1_correct,
-          side2_correct: params.side2_correct,
-          side3_correct: params.side3_correct,
+      resolve({ id }) {
+        const getTermStats = `
+          SELECT
+            min(start) AS firstStudied,
+            max(end) AS lastStudied,
+            count(termId) AS occurencesStudied,
+            SUM(timestampdiff(SECOND, start, end)) AS durationStudied,
+            SUM(side1=1 AND correct=1) AS side1_correct,
+            SUM(side1=1 AND unknown=1) AS side1_unknown,
+            SUM(side1=1 AND wrong=1) AS side1_incorrect,
+            SUM(side2=1 AND correct=1) AS side2_correct,
+            SUM(side2=1 AND unknown=1) AS side2_unknown,
+            SUM(side2=1 AND wrong=1) AS side2_incorrect,
+            SUM(side3=1 AND correct=1) AS side3_correct,
+            SUM(side3=1 AND unknown=1) AS side3_unknown,
+            SUM(side1=3 AND wrong=1) AS side3_incorrect
+              FROM Segments 
+              WHERE termId = ${id} GROUP BY termId
+          `;
 
-          // Unknown
-          side1_unknown: params.side1_unknown,
-          side2_unknown: params.side2_unknown,
-          side3_unknown: params.side3_unknown,
-
-          // Incorrect
-          side1_incorrect: params.side1_incorrect,
-          side2_incorrect: params.side2_incorrect,
-          side3_incorrect: params.side3_incorrect,
-        };
+        return sequelize.query(getTermStats, { raw: true, type: QueryTypes.SELECT });
       },
     },
   }),

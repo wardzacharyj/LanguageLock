@@ -1,11 +1,21 @@
 import {
   GraphQLObjectType,
   GraphQLInt,
+  GraphQLString,
 } from 'graphql';
 
 const Statistics = new GraphQLObjectType({
   name: 'Statistics',
   fields: () => ({
+    lastStudied: {
+      type: GraphQLString,
+    },
+    durationStudied: {
+      type: GraphQLInt,
+    },
+    occurencesStudied: {
+      type: GraphQLInt,
+    },
     side1_correct: {
       type: GraphQLInt,
     },

@@ -8,6 +8,7 @@ import {
   TermSchema,
   TagSchema,
   TermTagSchema,
+  SegmentSchema,
 } from '../models';
 
 const dbName = 'LanguageLock';
@@ -38,7 +39,10 @@ const Tags = sequelize.define('Tags', TagSchema);
 const [termTagSchema, termTagOptions] = TermTagSchema;
 const TermTags = sequelize.define('TermTags', termTagSchema, termTagOptions);
 
+const [segmentSchema, segmentOptions] = SegmentSchema;
+const Segments = sequelize.define('Segments', segmentSchema, segmentOptions);
 
+Terms.hasMany(Segments, { foreignKey: 'termId', onDelete: 'cascade' });
 Terms.hasMany(TermTags, { foreignKey: 'termId', onDelete: 'cascade' });
 Tags.hasMany(TermTags, { foreignKey: 'tagId', onDelete: 'cascade' });
 
@@ -94,6 +98,7 @@ export {
   Terms,
   Tags,
   TermTags,
+  Segments,
   sequelize,
   createBackup,
 };
