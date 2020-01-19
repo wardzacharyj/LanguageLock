@@ -3,11 +3,24 @@ import {
   GraphQLObjectType,
   GraphQLList,
   GraphQLInt,
+  GraphQLString,
+  GraphQLBoolean,
 } from 'graphql';
 
 import fs from 'fs';
-import { Terms, Tags, createBackup } from '../database';
-import { Term, Tag, Backup } from './types';
+import {
+  Terms,
+  Tags,
+  Segments,
+  createBackup,
+} from '../database';
+
+import {
+  Term,
+  Tag,
+  Backup,
+  Segment,
+} from './types';
 
 
 const RootQuery = new GraphQLObjectType(
@@ -69,6 +82,35 @@ const Mutation = new GraphQLObjectType(
         resolve: async () => ({
           filename: await createBackup(),
         }),
+      },
+      logTerm: {
+        type: Segment,
+        args: {
+          termId: { type: GraphQLInt },
+          sessionId: { type: GraphQLInt },
+          start: { type: GraphQLString },
+          end: { type: GraphQLString },
+          usedSide1: { type: GraphQLBoolean },
+          usedSide2: { type: GraphQLBoolean },
+          usedSide3: { type: GraphQLBoolean },
+          correct: { type: GraphQLBoolean },
+          unknown: { type: GraphQLBoolean },
+          wrong: { type: GraphQLBoolean },
+        },
+        resolve(parent, args) {
+          return Segments.create({
+            termId: args.termId,
+            sessionId: args.sessionId,
+            start: args.start,
+            end: args.end,
+            usedSide1: !!args.usedSide1,
+            usedSide2: !!args.usedSide2,
+            usedSide3: !!args.usedSide3,
+            correct: !!args.correct,
+            unknown: !!args.unknown,
+            wrong: !!args.wrong,
+          });
+        },
       },
     },
   },
