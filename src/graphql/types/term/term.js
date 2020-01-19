@@ -8,7 +8,8 @@ import { QueryTypes } from 'sequelize';
 import Statistics from './statistics';
 
 import Tag from '../tag';
-import { sequelize } from '../../../database';
+import Segment from '../segment';
+import { sequelize, Segments } from '../../../database';
 
 const Term = new GraphQLObjectType({
   name: 'Term',
@@ -71,6 +72,12 @@ const Term = new GraphQLObjectType({
         const results = await sequelize.query(getTermStats, { raw: true, type: QueryTypes.SELECT });
         const hasStats = results && results.length > 0;
         return hasStats ? results[0] : {};
+      },
+    },
+    segments: {
+      type: new GraphQLList(Segment),
+      resolve({ id }) {
+        return Segments.findAll({ where: { termId: id } });
       },
     },
   }),
