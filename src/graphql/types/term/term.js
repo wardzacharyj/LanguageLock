@@ -17,6 +17,18 @@ const Term = new GraphQLObjectType({
     id: {
       type: GraphQLString,
     },
+    createdAt: {
+      type: GraphQLString,
+      resolve({ createdAt }) {
+        return createdAt ? createdAt.toISOString() : null;
+      },
+    },
+    updatedAt: {
+      type: GraphQLString,
+      resolve({ updatedAt }) {
+        return updatedAt ? updatedAt.toISOString() : null;
+      },
+    },
     side1: {
       type: GraphQLString,
     },

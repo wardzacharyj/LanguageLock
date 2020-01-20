@@ -15,6 +15,18 @@ const Tag = new GraphQLObjectType({
     id: {
       type: GraphQLInt,
     },
+    createdAt: {
+      type: GraphQLString,
+      resolve({ createdAt }) {
+        return createdAt ? createdAt.toISOString() : null;
+      },
+    },
+    updatedAt: {
+      type: GraphQLString,
+      resolve({ updatedAt }) {
+        return updatedAt ? updatedAt.toISOString() : null;
+      },
+    },
     name: {
       type: GraphQLString,
     },
