@@ -22,6 +22,28 @@ import {
   Segment,
 } from './types';
 
+const parseSortDirection = (sortDirection) => {
+  const isDefined = typeof sortDirection !== 'undefined';
+  const isString = isDefined && typeof sortDirection === 'string';
+  const isNumber = isDefined
+    && typeof sortDirection === 'number'
+    && (sortDirection === 0 || sortDirection === 1);
+
+  let sortAscending = false;
+  let sortDescending = false;
+
+  if (isString) {
+    const ignoreCaseCompare = sortDirection.toLowerCase();
+    sortAscending = ignoreCaseCompare === 'asc' || ignoreCaseCompare === 'ascending';
+    sortDescending = ignoreCaseCompare === 'desc' || ignoreCaseCompare === 'descending';
+  } else if (isNumber) {
+    sortAscending = sortDirection === 0;
+    sortDescending = sortDirection === 1;
+  }
+
+  return { sortAscending, sortDescending };
+};
+
 
 const RootQuery = new GraphQLObjectType(
   {
@@ -56,7 +78,17 @@ const RootQuery = new GraphQLObjectType(
       },
       batches: {
         type: new GraphQLList(Segment),
-        resolve() {
+        args: {
+          sort: { type: GraphQLString },
+        },
+        resolve(root, { sort }) {
+          const { sortAscending, sortDescending } = parseSortDirection(sort);
+          if (sortAscending) {
+            return Segments.findAll({ order: [['end', 'ASC']] });
+          }
+          if (sortDescending) {
+            return Segments.findAll({ order: [['end', 'DESC']] });
+          }
           return Segments.findAll();
         },
       },
@@ -68,7 +100,17 @@ const RootQuery = new GraphQLObjectType(
       },
       terms: {
         type: new GraphQLList(Term),
-        resolve() {
+        args: {
+          sort: { type: GraphQLString },
+        },
+        resolve(root, { sort }) {
+          const { sortAscending, sortDescending } = parseSortDirection(sort);
+          if (sortAscending) {
+            return Terms.findAll({ order: [['updatedAt', 'ASC']] });
+          }
+          if (sortDescending) {
+            return Terms.findAll({ order: [['updatedAt', 'DESC']] });
+          }
           return Terms.findAll();
         },
       },
