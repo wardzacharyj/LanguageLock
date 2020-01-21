@@ -5,8 +5,8 @@ import {
   GraphQLList,
 } from 'graphql';
 import { QueryTypes } from 'sequelize';
-import { sequelize } from '../../database';
 import { Term } from './term';
+import DB from '../../database';
 
 
 const Tag = new GraphQLObjectType({
@@ -42,7 +42,7 @@ const Tag = new GraphQLObjectType({
             ON TermTags.tagId = Tags.id
           WHERE Tags.id = ${id}`;
 
-        return sequelize.query(getTermsWithTagIdQuery, { raw: true, type: QueryTypes.SELECT });
+        return DB.root.query(getTermsWithTagIdQuery, { raw: true, type: QueryTypes.SELECT });
       },
     },
   }),

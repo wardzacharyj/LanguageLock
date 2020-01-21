@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node index.js",
-    "db": "docker-compose -f test_mysql_docker.yml down && docker-compose -f test_mysql_docker.yml up"
+    "db": "docker-compose -f test_mysql_docker.yml down && docker-compose -f test_mysql_docker.yml up",
+    "test": "jest"
+  },
+  "jest": {
+    "setupFilesAfterEnv": ["./setupTests.js"]
   },
   "author": "Zach Ward",
   "license": "MIT",
@@ -18,17 +22,20 @@
     "graphql": "^14.5.8",
     "mysql2": "^2.1.0",
     "mysqldump": "^3.1.0",
+    "request-promise": "^4.2.5",
     "sequelize": "^5.21.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.0",
     "@babel/core": "^7.8.0",
     "@babel/node": "^7.8.0",
+    "@babel/plugin-transform-runtime": "^7.8.3",
     "@babel/preset-env": "^7.8.0",
     "babel-preset-airbnb": "^4.4.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.0",
+    "jest": "^24.9.0",
     "nodemon": "^2.0.2",
     "sequelize-cli": "^5.5.1"
   }

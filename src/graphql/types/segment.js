@@ -5,7 +5,7 @@ import {
   GraphQLBoolean,
 } from 'graphql';
 import { Term } from './term';
-import { Terms } from '../../database';
+import DB from '../../database';
 
 const Segment = new GraphQLObjectType({
   name: 'Segment',
@@ -52,7 +52,7 @@ const Segment = new GraphQLObjectType({
     term: {
       type: Term,
       resolve({ termId }) {
-        return Terms.findByPk(termId);
+        return DB.Terms.findByPk(termId);
       },
     },
   }),
