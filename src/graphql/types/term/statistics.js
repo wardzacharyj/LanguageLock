@@ -22,7 +22,7 @@ const Statistics = new GraphQLObjectType({
     durationStudied: {
       type: GraphQLInt,
     },
-    occurencesStudied: {
+    occurrencesStudied: {
       type: GraphQLInt,
     },
     side1_correct: {

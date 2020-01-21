@@ -2,6 +2,7 @@ import {
   GraphQLObjectType,
   GraphQLString,
   GraphQLList,
+  GraphQLInt,
 } from 'graphql';
 
 import { QueryTypes } from 'sequelize';
@@ -9,13 +10,15 @@ import Statistics from './statistics';
 
 import Tag from '../tag';
 import Segment from '../segment';
-import { sequelize, Segments } from '../../../database';
+
+import DB from '../../../database';
+
 
 const Term = new GraphQLObjectType({
   name: 'Term',
   fields: () => ({
     id: {
-      type: GraphQLString,
+      type: GraphQLInt,
     },
     createdAt: {
       type: GraphQLString,
@@ -57,7 +60,7 @@ const Term = new GraphQLObjectType({
             ON TermTags.tagId = Tags.id 
             WHERE TermTags.termId = ${id}`;
 
-        return sequelize.query(getTermTagsQuery, { raw: true, type: QueryTypes.SELECT });
+        return DB.root.query(getTermTagsQuery, { raw: true, type: QueryTypes.SELECT });
       },
     },
     statistics: {
@@ -81,7 +84,7 @@ const Term = new GraphQLObjectType({
               FROM Segments 
               WHERE termId = ${id} GROUP BY termId
           `;
-        const results = await sequelize.query(getTermStats, { raw: true, type: QueryTypes.SELECT });
+        const results = await DB.root.query(getTermStats, { raw: true, type: QueryTypes.SELECT });
         const hasStats = results && results.length > 0;
         return hasStats ? results[0] : {};
       },
@@ -89,7 +92,7 @@ const Term = new GraphQLObjectType({
     segments: {
       type: new GraphQLList(Segment),
       resolve({ id }) {
-        return Segments.findAll({ where: { termId: id } });
+        return DB.Segments.findAll({ where: { termId: id } });
       },
     },
   }),

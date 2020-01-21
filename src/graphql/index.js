@@ -8,12 +8,7 @@ import {
   GraphQLBoolean,
 } from 'graphql';
 
-import {
-  Terms,
-  Tags,
-  Segments,
-  createBackup,
-} from '../database';
+import DB from '../database';
 
 import {
   Term,
@@ -55,7 +50,7 @@ const RootQuery = new GraphQLObjectType(
           id: { type: GraphQLInt },
         },
         resolve(root, { id }) {
-          return Terms.findByPk(id);
+          return DB.Terms.findByPk(id);
         },
       },
       tag: {
@@ -64,58 +59,58 @@ const RootQuery = new GraphQLObjectType(
           id: { type: GraphQLInt },
         },
         resolve(root, { id }) {
-          return Tags.findByPk(id);
+          return DB.Tags.findByPk(id);
         },
       },
       batch: {
-        type: new GraphQLList(Segment),
+        type: GraphQLList(Segment),
         args: {
           id: { type: GraphQLInt },
         },
         resolve(root, { id }) {
-          return Segments.findAll({ where: { batchId: id } });
+          return DB.Segments.findAll({ where: { batchId: id } });
         },
       },
       batches: {
-        type: new GraphQLList(Segment),
+        type: GraphQLList(Segment),
         args: {
           sort: { type: GraphQLString },
         },
         resolve(root, { sort }) {
           const { sortAscending, sortDescending } = parseSortDirection(sort);
           if (sortAscending) {
-            return Segments.findAll({ order: [['end', 'ASC']] });
+            return DB.Segments.findAll({ order: [['end', 'ASC']] });
           }
           if (sortDescending) {
-            return Segments.findAll({ order: [['end', 'DESC']] });
+            return DB.Segments.findAll({ order: [['end', 'DESC']] });
           }
-          return Segments.findAll();
+          return DB.Segments.findAll();
         },
       },
       tags: {
-        type: new GraphQLList(Tag),
+        type: GraphQLList(Tag),
         resolve() {
-          return Tags.findAll();
+          return DB.Tags.findAll();
         },
       },
       terms: {
-        type: new GraphQLList(Term),
+        type: GraphQLList(Term),
         args: {
           sort: { type: GraphQLString },
         },
         resolve(root, { sort }) {
           const { sortAscending, sortDescending } = parseSortDirection(sort);
           if (sortAscending) {
-            return Terms.findAll({ order: [['updatedAt', 'ASC']] });
+            return DB.Terms.findAll({ order: [['updatedAt', 'ASC']] });
           }
           if (sortDescending) {
-            return Terms.findAll({ order: [['updatedAt', 'DESC']] });
+            return DB.Terms.findAll({ order: [['updatedAt', 'DESC']] });
           }
-          return Terms.findAll();
+          return DB.Terms.findAll();
         },
       },
       backups: {
-        type: new GraphQLList(Backup),
+        type: GraphQLList(Backup),
         resolve() {
           return new Promise((resolve, reject) => fs.readdir('backups', (error, filenames) => {
             if (error) {
@@ -137,7 +132,7 @@ const Mutation = new GraphQLObjectType(
       createBackup: {
         type: Backup,
         resolve: async () => ({
-          filename: await createBackup(),
+          filename: await DB.createBackup(),
         }),
       },
       logTerm: {
@@ -155,7 +150,7 @@ const Mutation = new GraphQLObjectType(
           wrong: { type: GraphQLBoolean },
         },
         resolve(parent, args) {
-          return Segments.create({
+          return DB.Segments.create({
             termId: args.termId,
             batchId: args.batchId,
             start: args.start,
@@ -177,6 +172,5 @@ const schema = new GraphQLSchema({
   query: RootQuery,
   mutation: Mutation,
 });
-
 
 export default schema;
