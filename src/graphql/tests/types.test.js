@@ -5,10 +5,10 @@ import {
   GraphQLBoolean,
 } from 'graphql';
 
-import { Term, TermStatistics } from './term';
-import Backup from './backup';
-import Tag from './tag';
-import Segment from './segment';
+import { Term, TermStatistics } from '../types/term';
+import Backup from '../types/backup';
+import Tag from '../types/tag';
+import Segment from '../types/segment';
 
 const checkCustomType = (Type, field, type) => () => {
   expect(Type.getFields()).toHaveProperty(field);
@@ -86,11 +86,11 @@ describe('Schema Types', () => {
     it('Should have term of type boolean', checkSegmentCustom('term', Term));
   });
   describe('Backup', () => {
-    it('Should have downloadUrl of type integer', checkBackupString('downloadUrl'));
-    it('Should have year of type string', checkBackupInt('year'));
-    it('Should have month of type string', checkBackupInt('month'));
-    it('Should have day of type string', checkBackupInt('day'));
-    it('Should have hour of type string', checkBackupInt('hour'));
-    it('Should have minute of type string', checkBackupInt('minute'));
+    it('Should have downloadUrl of type string', checkBackupString('downloadUrl'));
+    it('Should have year of type integer', checkBackupInt('year'));
+    it('Should have month of type integer', checkBackupInt('month'));
+    it('Should have day of type integer', checkBackupInt('day'));
+    it('Should have hour of type integer', checkBackupInt('hour'));
+    it('Should have minute of type integer', checkBackupInt('minute'));
   });
 });

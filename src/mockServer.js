@@ -2,13 +2,12 @@
 import express from 'express';
 import { graphql } from 'graphql';
 import request from 'request-promise';
-
 import schema from './graphql';
 
 
 const mockServer = (port) => new Promise((resolve, reject) => {
-  const server = express();
-  server.get('/graphql', (req, res) => {
+  const app = express();
+  app.get('/graphql', (req, res) => {
     const { queryBody } = req.query;
 
     if (!queryBody) {
@@ -23,9 +22,11 @@ const mockServer = (port) => new Promise((resolve, reject) => {
   });
 
   const portUsed = port || 8000;
-  server.listen(portUsed, () => resolve(
+  const server = app.listen(portUsed);
+
+  resolve(
     {
-      close: async () => server.close(),
+      stop: async () => server.close(),
       query: (queryBody) => request(
         {
           baseUrl: `http://localhost:${portUsed}`,
@@ -36,7 +37,7 @@ const mockServer = (port) => new Promise((resolve, reject) => {
         },
       ),
     },
-  ));
+  );
 });
 
 export default mockServer;
