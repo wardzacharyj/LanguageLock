@@ -93,7 +93,7 @@ const databaseBuilder = (
     addHskGroup('data/hsk/2.json', 'hsk2'),
   ]);
 
-  db.sync({ force: true }).then(loadData);
+  const initialLoad = db.sync({ force: true }).then(loadData);
 
   return {
     root: db,
@@ -104,7 +104,11 @@ const databaseBuilder = (
     Tags,
     TermTags,
     Segments,
-    reset: () => db.sync({ force: true }).then(loadData),
+    ready: () => initialLoad,
+    reset: async () => {
+      await db.sync({ force: true });
+      await loadData();
+    },
   };
 };
 

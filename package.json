@@ -6,10 +6,12 @@
   "scripts": {
     "start": "nodemon --exec babel-node index.js",
     "db": "docker-compose -f test_mysql_docker.yml down && docker-compose -f test_mysql_docker.yml up",
-    "test": "jest"
+    "test": "jest --verbose"
   },
   "jest": {
-    "setupFilesAfterEnv": ["./setupTests.js"]
+    "setupFilesAfterEnv": [
+      "./setupTests.js"
+    ]
   },
   "author": "Zach Ward",
   "license": "MIT",
