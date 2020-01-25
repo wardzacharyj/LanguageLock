@@ -68,6 +68,9 @@ const RootQuery = new GraphQLObjectType(
           id: { type: GraphQLInt },
         },
         resolve(root, { id }) {
+          if (typeof id === 'undefined') {
+            throw new Error('Invalid batch id provided');
+          }
           return DB.Segments.findAll({ where: { batchId: id } });
         },
       },
